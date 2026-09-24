@@ -1,16 +1,21 @@
+/* Reset global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Seletor de TAG */
-
+/* Base e tipografia */
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #0F172A;
     background-color: #F8FAFC;
     line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    color: #1a1a1a;
 }
 
 h1 {
@@ -32,6 +37,7 @@ a {
     color: #0284C7;
 }
 
+/* Cabeçalho e navegação */
 header {
     background-color: #1E3A8A;
     color: #ffffff;
@@ -64,12 +70,14 @@ nav a:hover {
     color: #ffffff;
 }
 
+/* Layout principal */
 main {
     max-width: 960px;
     margin: 0 auto;
     padding: 32px 16px;
 }
 
+/* Rodapé */
 footer {
     background-color: #1E3A8A;
     color: #ffffff;
@@ -77,6 +85,7 @@ footer {
     padding: 24px 16px;
 }
 
+/* Cartões */
 .cartao-info {
     padding: 16px;
     margin-bottom: 12px;
@@ -92,6 +101,7 @@ footer {
     border-left: 4px solid #0066cc;
 }
 
+/* Formulários */
 .grupo-campo {
     display: flex;
     flex-direction: column;
@@ -117,7 +127,7 @@ footer {
     margin-bottom: 5px;
     font-weight: bold;
 }
- 
+
 .campo textarea {
     width: 100%;
     padding: 8px;
@@ -126,6 +136,7 @@ footer {
     box-sizing: border-box;
 }
 
+/* Botões */
 .botao-submit {
     background-color: #0066cc;
     color: white;
@@ -139,6 +150,7 @@ footer {
     background-color: #004b99;
 }
 
+/* Seletor compartilhado */
 h1, h2, h3 {
     font-family: Georgia, serif;
     color: #1a1a1a;
