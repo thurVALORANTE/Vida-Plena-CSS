@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -18,44 +18,59 @@
     </header>
 
     <main>
-        <h2>Agende sua culsuta</h2>
+        <h2>Agende sua consulta</h2>
+
         <form action="#" method="post">
-            <label for="nome">Nome Completo:</label>
-            <input type="text" name="nome" id="nome" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-            <br>
-            <label for="telefone">Telefone:</label>
-            <input type="tel" name="telefone" id="telefone" required inputmode="numeric" maxlength="15"
-                pattern="(?:\(?[1-9]{2}\)?\s?)?(?:9\d{4}|\d{4})-?\d{4}"
-                title="Digite com DDD. Ex: (17) 98765-4321 ou 17987654321">
-            <br>
-            <label for="data">Data:</label>
-            <input type="date" name="data" id="data" required>
-            <br>
-            <label for="hora">Horário:</label>
-            <input type="time" name="hora" id="hora" required>
-            <br>
-            <label for="especialidade">Especialidade:</label>
-            <select name="especialidade" id="especialidade" required>
-                <option value="">Selecione uma opção</option>
-                <option value="clinico-geral">Clínico Geral</option>
-                <option value="cardiologia">Cardiologia</option>
-                <option value="dermatologia">Dermatologia</option>
-                <option value="pediatria">Pediatria</option>
-            </select>
-            <br>
-            <label for="mensagem">Mensegem:</label>
-            <textarea name="mensagem" id="mensagem" rows="4"></textarea>
-            <br>
-            <button type="submit">Confirmar agendamento</button>
+            <div class="grupo-campo">
+                <label for="nome" class="rotulo">Nome Completo:</label>
+                <input type="text" name="nome" id="nome" class="campo-entrada" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="email" class="rotulo">Email:</label>
+                <input type="email" name="email" id="email" class="campo-entrada">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="telefone" class="rotulo">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" class="campo-entrada" required inputmode="numeric" maxlength="15"
+                    pattern="(?:\(?[1-9]{2}\)?\s?)?(?:9\d{4}|\d{4})-?\d{4}"
+                    title="Digite com DDD. Ex: (17) 98765-4321 ou 17987654321">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="data" class="rotulo">Data:</label>
+                <input type="date" name="data" id="data" class="campo-entrada" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="hora" class="rotulo">Horário:</label>
+                <input type="time" name="hora" id="hora" class="campo-entrada" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="especialidade" class="rotulo">Especialidade:</label>
+                <select name="especialidade" id="especialidade" class="campo-entrada" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="clinico-geral">Clínico Geral</option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="dermatologia">Dermatologia</option>
+                    <option value="pediatria">Pediatria</option>
+                </select>
+            </div>
+
+            <div class="grupo-campo grupo-campo-expandido">
+                <label for="mensagem" class="rotulo">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" class="campo-entrada campo-textarea" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="botao-submit">Confirmar agendamento</button>
         </form>
     </main>
 
     <footer>
         <p>
-            Clínica Vida Plena - Todos os direitos reservado.
+            Clínica Vida Plena - Todos os direitos reservados.
         </p>
     </footer>
 </body>
