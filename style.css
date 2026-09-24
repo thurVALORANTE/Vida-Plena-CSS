@@ -1,5 +1,78 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Seletor de TAG */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0F172A;
+    background-color: #F8FAFC;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #1E3A8A;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #0284C7;
+}
+
+header {
+    background-color: #1E3A8A;
+    color: #ffffff;
+    padding: 32px 16px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 12px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+nav a {
+    color: #E0F2FE;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+footer {
+    background-color: #1E3A8A;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 16px;
 }
